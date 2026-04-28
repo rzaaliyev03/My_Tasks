@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="max-w-[1320px] mx-auto w-[90%]">
+        <!-- search start -->
+        <header>
+            <div class="flex justify-center p-10">
+                <input type="text" id="searchInput" placeholder="Məhsulun adini yazin..."
+                    class="w-full max-w-md px-4 py-2 border-2 border-gray-200 rounded-xl focus:border-indigo-500 outline-none transition-all">
+            </div>
+            <div id="products" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 p-10">
+            </div>
+        </header>
+        <!-- search end -->
+
+        <!-- mehsullarin yigildigi yer -->
+        <div id="products" class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7.5"> </div>
+
+        <!-- buttonlar -->
+        <div class="flex gap-7.5 my-10 justify-center" id="paginations"></div>
+
+
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
